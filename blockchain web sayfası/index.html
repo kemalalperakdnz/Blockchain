@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <title>Blockchain</title>
+    <link rel="icon" type="image/x-icon" href="images/resim2.jpg">
+    <meta charset="UTF-8">
+    <style>
+    
+      *{
+        margin:0px;
+        padding:0px;
+      }
+
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      
+      body {
+        background-color: #ddd;
+        font-family: 'Open Sans', sans-serif;
+      }
+      
+      .left {
+        float: left;
+      }
+      
+      .right {
+        float: right;
+      }
+      
+      a {
+        text-decoration: none;
+      }
+
+      p {
+        color: #3a3553;
+        line-height: 20px;
+      }
+
+      .paragraf {
+        background-color: #dae5e8;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 10px;
+        border-radius: 30px 0px 30px 0px;
+        -moz-border-radius: 30px 0px 30px 0px;
+        -webkit-border-radius: 30px 0px 30px 0px;
+        border: 3px solid #0f0;
+      }
+      
+      h1{
+        position: absolute;
+        right: 0%;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        font-family: sans-serif;
+        font-size: 125px;
+        text-shadow:
+        0 0 5px black, 
+        0 0 10px black,
+        0 0 15px #0f0, 
+        0 0 20px #0f0, 
+        0 0 25px #0f0, 
+        0 0 30px #0f0, 
+        0 0 35px #0f0;
+      }
+            
+      .menu {
+        position: fixed;
+        background-color: rgba(0,0,0,0.4);
+        border-bottom: 1px solid rgba(0,0,0,0.8);
+        padding: 0 50px;
+        height: 95px;
+        width: calc(100% - 100px);
+     }
+            
+      .menu a {
+        line-height: 80px; 
+        color: #0f0;
+        font-size: 18px;   
+      }
+            
+      .sol-menu a {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 32px;
+      }
+
+      .kapak img{
+        height: 300px;
+        width: 1519px;
+      }
+      
+      .profil-resmi {
+        position: absolute;
+        left: calc(44% - 130px);
+        margin-top: 180px;
+        display: inline-block;
+        border: 20px inset #0f0;
+        background-color: darkgray;
+        padding: 20px;
+      }
+      
+      .profil-resmi img {
+        width: 400px;
+        border-radius: 100%;
+        box-shadow: 0px 10px 50px rgba(0,0,0,0.3);
+      }
+      
+      .baslik {
+        text-align: center;
+        margin-top: 250px;
+        margin-bottom: 50px;
+        font-size: 60px;
+        font-weight: bold;
+      }
+      
+      .icerik {
+        padding: 0 150px;
+        margin-bottom: 300px;
+      }
+      
+      .susleme {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 50px 50px 50px rgba(0,0,0,0.3);
+      }
+
+      .sag-kolon{
+        width: 47%;
+        height: 1000px;
+      }
+      
+      .kolon {
+        width: 100%;
+        height: 1300px;
+      }
+
+      .footer{ 
+        margin-top:px;
+        background:#222222;
+        width:100%; 
+        height:269px;
+        float:left;
+        color:#0f0; 
+        font-family:arial;
+      }
+		
+      .footer #kutu b{
+        font-size:14px;
+      }
+		  
+      .footer_container{
+        width:768px; 
+        height:175px; 
+        margin:30px auto;
+      }
+
+		  ul{
+        list-style-type:none;
+        margin:17px 0;
+        padding:0px;
+      }
+
+		  #kutu{
+        width:auto; 
+        height:125px; 
+        float:left; 
+        color:#0f0;
+      }
+
+		  ul li {
+        float:left;
+        font-family:tahoma; 
+        font-size:12px; 
+        margin-bottom:8px; 
+        clear:left; 
+        color:#0f0;
+      }
+
+		  #kutu:last-child li {
+        float:left;
+        clear:none;
+        margin-right:10px;
+      }
+
+      .dropdown img {
+        height: 85px;
+        width:85px ;
+        padding: 7px;
+        font-size: 16px;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: grey;
+        min-width: 400px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 5px 5px;
+        text-decoration: none;
+        display: block;
+      }
+
+
+      .dropdown-content a:hover {
+        background-color: #0f0;
+      }
+
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+
+      .acilir-menu a {
+          display: block;
+          text-align: left;
+      }
+
+      .menu:hover .acilir-menu {
+          display: block;
+      }
+   </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="menu">
+    <!-- Sol Menü -->
+        <div class="sol-menu left">
+          <a href="index.html">Blockchain</a>
+        </div> 
+    <!-- Sağ Menü -->
+        <div class="sag-menu right">
+          <div class="dropdown">
+            <img src="images/pngegg (6).png">
+            <div class="dropdown-content">
+            <a href="BlockchainNedir.html">Blockchain Nedir?</a>
+            <a href="AkıllıKontratlar.html">Akıllı Kontratlar</a>
+            <a href="BlockchainFinans.html">Blockchain Finans</a>
+            <a href="profil.html">Profil</a>
+            <a href="girişyapın.html">Giriş Yap</a>
+            </div>
+          </div> 
+        </div> 
+      </div><!-- Menü bitiş-->
+    
+    <div class="kapak">
+      <img src="images/conny-schneider-xuTJZ7uD7PI-unsplash.jpg" alt="kapakfotoğrafı">
+        <div class="profil-resmi">
+          <img src="images/resim2.jpg" alt="">
+    </div>
+    </div>
+      <div class="icerik">
+        <div class="kolon left susleme">
+            <h2 style="text-align: center;">Blockchain Nedir?</h2><br>
+          <div class="paragraf">
+            <h1 class="baslik">Blockchain</h1>
+            <p>
+              Blockchain, merkezi olmayan bir veritabanı modelidir ve dijital varlıkların (örneğin kripto paralar) takasında kullanılır. Küresel bir ağ üzerinde çalışan bu teknoloji, kullanıcıların verilerini doğrulamasına ve işlem yapmasına olanak tanır. Blockchain, bir dizi bloktan oluşan zincirlerden meydana gelir. Her blok, önceki bloğun kriptografik olarak güvence altına alınmış özetiyle bağlantılıdır, bu da blokların değiştirilemez ve geri alınamaz olduğu anlamına gelir.
+            </p><br>
+            <p>
+              Blockchain teknolojisi, güvenli ve şeffaf bir şekilde dijital varlıkların takasını sağlayarak finansal işlemlerde devrim yaratmıştır. Kripto para birimleri gibi dijital varlıkların güvenli bir şekilde transfer edilmesini ve saklanmasını sağlayan bu teknoloji, geleneksel merkezi kuruluşlara olan bağımlılığı azaltmıştır. Aynı zamanda, blockchain teknolojisi, kullanıcıların işlemlerini doğrulamalarına ve takip etmelerine olanak tanır, böylece daha şeffaf ve güvenilir bir finansal sistem oluşturulabilir.
+            </p><br>
+            <p>
+              Blockchain'in temel prensibi, blokların birbirine bağlı bir zincir oluşturmasıdır. Her yeni blok, önceki bloğun özetiyle bağlantılıdır ve bu sayede blokların değiştirilmesi veya geri alınması neredeyse imkansız hale gelir. Bu da blockchain'in güvenli ve güvenilir bir veritabanı sağladığı anlamına gelir.
+            </p><br>
+            <p>
+              Blockchain teknolojisinin kullanım alanları oldukça geniştir. Finans sektöründeki kullanımıyla başlayan blockchain, sağlık, lojistik, gayrimenkul ve diğer birçok sektörde de kullanılmaktadır. Örneğin, sağlık sektöründe, hastaların tıbbi kayıtlarının güvenli bir şekilde saklanması ve paylaşılması için blockchain kullanılabilir. Aynı şekilde, lojistik sektöründe, ürünlerin takip edilmesi ve tedarik zincirinin izlenmesi için de blockchain teknolojisi kullanılabilir.
+            </p><br>
+            <p>
+              Blockchain teknolojisi, veri güvenliği ve şeffaflığı sağlamak için benzersiz bir fırsat sunmaktadır. Bu teknolojinin daha da gelişmesiyle birlikte, finansal işlemler, veri saklama ve diğer birçok alanda daha güvenli ve etkili bir şekilde gerçekleştirilebilecektir. Blockchain, merkezi olmayan bir veritabanı modelidir ve dijital varlıkların (örneğin kripto paralar) takasında kullanılır. Küresel bir ağ üzerinde çalışan bu teknoloji, kullanıcıların verilerini doğrulamasına ve işlem yapmasına olanak tanır. Blockchain, bir dizi bloktan oluşan zincirlerden meydana gelir. Her blok, önceki bloğun kriptografik olarak güvence altına alınmış özetiyle bağlantılıdır, bu da blokların değiştirilemez ve geri alınamaz olduğu anlamına gelir.
+            </p><br>
+            <p>
+              Blockchain teknolojisi, güvenli ve şeffaf bir şekilde dijital varlıkların takasını sağlayarak finansal işlemlerde devrim yaratmıştır. Kripto para birimleri gibi dijital varlıkların güvenli bir şekilde transfer edilmesini ve saklanmasını sağlayan bu teknoloji, geleneksel merkezi kuruluşlara olan bağımlılığı azaltmıştır. Aynı zamanda, blockchain teknolojisi, kullanıcıların işlemlerini doğrulamalarına ve takip etmelerine olanak tanır, böylece daha şeffaf ve güvenilir bir finansal sistem oluşturulabilir.
+            </p><br>
+            <p>
+              Blockchain'in temel prensibi, blokların birbirine bağlı bir zincir oluşturmasıdır. Her yeni blok, önceki bloğun özetiyle bağlantılıdır ve bu sayede blokların değiştirilmesi veya geri alınması neredeyse imkansız hale gelir. Bu da blockchain'in güvenli ve güvenilir bir veritabanı sağladığı anlamına gelir. Blockchain teknolojisinin kullanım alanları oldukça geniştir. Finans sektöründeki kullanımıyla başlayan blockchain, sağlık, lojistik, gayrimenkul ve diğer birçok sektörde de kullanılmaktadır. Örneğin, sağlık sektöründe, hastaların tıbbi kayıtlarının güvenli bir şekilde saklanması ve paylaşılması için blockchain kullanılabilir. Aynı şekilde, lojistik sektöründe, ürünlerin takip edilmesi ve tedarik zincirinin izlenmesi için de blockchain teknolojisi kullanılabilir.
+            </p><br>
+            <p>
+              Blockchain teknolojisi, veri güvenliği ve şeffaflığı sağlamak için benzersiz bir fırsat sunmaktadır. Bu teknolojinin daha da gelişmesiyle birlikte, finansal işlemler, veri saklama ve diğer birçok alanda daha güvenli ve etkili bir şekilde gerçekleştirilebilecektir. Blockchain teknolojisi, gelecekte birçok sektörde daha fazla benimsenecek ve kullanılacak bir teknoloji olarak öne çıkıyor. Bu nedenle, bu alanda uzmanlaşmak ve bu teknolojiyi anlamak, geleceğin iş dünyasında rekabet avantajı sağlayabilir.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div style="clear:both"></div>
+      
+      <div class="footer">
+        <div class="footer_container">
+          <div id="kutu">
+            <b>Sayfalar</b>
+            <ul>
+              <li><a href="index.html">Blockchain</a></li>
+              <li><a href="BlockchainNedir.html">Blockchain Nedir?</a></li>
+              <li><a href="AkıllıKontratlar.html">Akıllı Kontratlar</a></li>
+              <li><a href="BlockchainFinans.html">Blockchain Finans</a></li>
+              <li><a href="profil.html">Profil</a></li>
+				    </ul>
+			    </div>
+        <div id="kutu" style="margin-left:150px;">
+				    <b>İletişim</b>
+				    <ul>
+              <li>Blockchain</li>
+              <li>C: 0777-777-7777</li>
+              <li>M: blockchain@gmail.com</li>
+				    </ul>
+			  </div>
+			  <div id="kutu" style="margin-left:150px;">
+				    <b>Sosyal Medya</b>
+				    <ul>
+              <li>İnstagram: @blochchainresmi</li><br>
+              <li>Twitter:@blochchainresmi</li>
+				    </ul>
+			  </div>
+  </body>
+</html>
